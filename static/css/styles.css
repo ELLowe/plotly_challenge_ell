@@ -15,6 +15,7 @@
 .item-special{
     font-size: 24px;
     color:white !important;
+    text-shadow: 1px 1px 2px black, 0 0 25px #67c0fc, 0 0 5px rgb(89, 0, 116) !important;
 }
 
 .belly_svg{
