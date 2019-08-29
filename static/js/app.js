@@ -70,7 +70,8 @@ function buildCharts(sample) {
       var pieTrace = {
         values: top10quantities,
         labels: top10ids,
-        // text:top10labels,
+        hovertext: top10labels,
+        hoverinfo: 'hovertext',
         type: 'pie'
       };
       
