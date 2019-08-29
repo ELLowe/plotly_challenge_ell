@@ -1,0 +1,26 @@
+.nav_shell{
+    position:fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 50 px;
+    display: flex;
+    z-index:999;
+    background-image: url("../images/bacteria_by_filterforgedotcom.jpg");
+    background-size: cover;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.item-special{
+    font-size: 24px;
+    color:white !important;
+}
+
+.belly_svg{
+    bottom: 5px;
+    right: 200px;
+    width: 35px;
+    background:none;
+    color:white;
+}

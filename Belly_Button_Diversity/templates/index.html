@@ -5,23 +5,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Flask Plotlyjs Example</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <title>Flask Plotly JS</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../static/css/styles.css" />
 </head>
 
 <body>
+<!-- NAVBAR START -->
+<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light nav_shell">
+    <a class="navbar-brand font-weight-bold" href="">
+      <img class="belly_svg" src="../static/images/belly_button.svg">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href=""> Belly Button Biodiversity Dashboard<span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- NAVBAR END -->
+  
+  <div class="container-fluid" style= "margin-top: 80px">
 
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 jumbotron text-center">
-        <h1>Belly Button Biodiversity Dashboard</h1>
-        <p>Use the interactive charts below to explore the dataset</p>
+
+    <div class="jumbotron text-center">
+      <div class="container">
+        <h1 class="display-4">How Diverse Are Belly Buttons?</h1>
+        <p class="lead">Use the interactive charts below to explore the dataset!</p>
       </div>
     </div>
+
     <div class="row">
       <div class="col-md-2">
         <div class="well">
-          <h5>SELECT Sample:</h5>
+          <h5>Select Sample:</h5>
           <select id="selDataset" onchange="optionChanged(this.value)"></select>
         </div>
         <div class="panel panel-primary">
@@ -32,16 +53,22 @@
         </div>
       </div>
       <div class="col-md-5">
-        <div id="pie"></div>
+        <div id="pie">
+
+        </div>
       </div>
       <div class="col-md-5">
-        <div id="gauge"></div>
+        <div id="gauge">
+
+        </div>
       </div>
     </div>
   </div>
   <div class="row">
     <div class="col-md-12">
-      <div id="bubble"></div>
+      <div id="bubble">
+
+      </div>
     </div>
   </div>
 
