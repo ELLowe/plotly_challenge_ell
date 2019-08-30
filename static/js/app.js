@@ -131,9 +131,9 @@ function buildCharts(sample) {
       }];
 
       let gaugeLayout = {
-        width: 500,
-        height: 500,
-        margin: {t: 0, b: 0},
+        // width: 500,
+        // height: 500,
+        // margin: {t: 0, b: 0},
         font: {color: colorBar}
       };
 
